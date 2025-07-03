@@ -93,7 +93,7 @@ body{
 }
 
 .img{
-    max-width: 120%;
+    max-width: 100%;
 }
 
 .font-2 {
@@ -118,6 +118,24 @@ body{
     text-decoration: none;
 }
 
+.animate {
+    animation: slide 5s ease-in-out 1s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(.3rem);
+    }
+    50% {
+        transform: translateY(2rem);
+    }
+    100% {
+        transform: translateY(.3rem);
+    }
+}
+
+
+
 
 
 
@@ -129,5 +147,9 @@ body{
 @media only screen and (max-width: 768px){
     .img{
         max-width: 100%;
+    }
+    .font-2 {
+        text-align: center;
+        font-size: 18px;
     }
 }
