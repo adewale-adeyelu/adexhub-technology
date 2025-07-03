@@ -11,16 +11,6 @@
 </head>
 <body>
 
-    <style>
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .animate-fade-in {
-            animation: fadeIn 0.2s ease-out;
-        }
-    </style>
-
     <!-- Page loader -->
     <div id="loader">
         <div class="spinner">
@@ -92,9 +82,9 @@
    
     <!-- section 1 -->
    <section class="bg-[#00008B] py-10">
-        <div class="flex flex-col-reverse md:grid md:grid-cols-2 gap-5 lg:px-10 px-3">
+        <div class="grid md:grid-cols-2 gap-5 lg:px-10 px-3">
             <div class="text-center mt-2 lg:mt-24">
-                <div class="text-center lg:mt-40 mt-10">
+                <div class="text-center lg:mt-40 mt-28">
                     <h1 class="text-white text-5xl font-bold">
                         We Keep You <br> Connected
                     </h1>
@@ -109,15 +99,56 @@
                     </a>
                 </div>
             </div>
-            <div class="lg:mt-16 mt-10">
+            <div class="lg:mt-16">
                 <img src="img/hero-1-img.png" alt="adexhub" class="img animate">
             </div>
         </div>
    </section>
 
    <!-- section 2 -->
-    <section>
+    <section id="about" class="lg:mt-20 mt-16">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+            <h4 class="text-[#00008B] font-semibold text-3xl">
+                Our Serivces
+            </h4>
+            <p class="text-[#444444] mt-2 px-2">
+                At Adexhub, we simplify your everyday payments. From <br class="hidden lg:block">airtime and data to electricity and TV subscriptions, enjoy reliable and<br class="hidden lg:block"> secure transactions at your fingertips.
+            </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5 lg:px-20 px-4 my-10" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+            <!-- 1st grid -->
+            <div class="icon-box transform h-full px-6 py-10">
+                <span class="bi bi-phone text-3xl mt-3 icon-bg"></span>
+                <h4 class="text-[#00008B] font-semibold text-3xl mt-2">
+                    Buy Data/Airtime
+                </h4>
+                <p class="mt-2 text-[#444444]">
+                    Get instant access to unlimited discounts on your subscriptions. You can also make extra income reselling our cheap services from the comfort of your home.
+                </p>
+            </div>
 
+            <!-- 2nd grid -->
+            <div class="icon-box transform h-full px-6 py-10">
+                <span class="bi bi-shield-check text-3xl mt-3 icon-bg"></span>
+                <h4 class="text-[#00008B] font-semibold text-3xl mt-2">
+                    Generate Data Pins
+                </h4>
+                <p class="mt-2 text-[#444444]">
+                    Introducing data pin is great! Vouchers are just like regular airtime recharge cards that you can load without any internet connection.
+                </p>
+            </div>
+
+            <!-- 3rd grid -->
+            <div class="icon-box transform h-full px-6 py-10">
+                <span class="bi bi-lightning text-3xl mt-3 icon-bg"></span>
+                <h4 class="text-[#00008B] font-semibold text-3xl mt-2">
+                    Bills Payments
+                </h4>
+                <p class="mt-2 text-[#444444]">
+                    We have really simplified everything for you. Recharge your, DSTV, Gotv, Startimes and prepaid or postpaid Nepa bills. Do all these right here.
+                </p>
+            </div>
+        </div>
     </section>
    
     
