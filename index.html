@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adexhub Technology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.2s ease-out;
+        }
+    </style>
+
+    <!-- Page loader -->
+    <div id="loader">
+        <div class="spinner">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+   <!--============= Navbar ============-->
+   <header class="fixed w-full flex justify-between items-center bg-[#00008B] lg:py-7 py-3 shadow lg:px-28 px-4 z-40">
+        <div>
+            <a href=""><img src="img/Adexhub_Logo_2.png" alt="adexxhub" width="140px"></a>
+        </div>
+        <div>
+            <ul class="flex items-start space-x-7 hidden lg:flex">
+                <li class="text-white">
+                    <a href="" class="text-white font-semibold text-sm hover:border-b-2">Home</a>
+                </li>
+                <li class="text-white">
+                    <a href="" class="text-white font-semibold text-sm hover:border-b-2">About</a>
+                </li>
+                <li class="text-white">
+                    <a href="" class="text-white font-semibold text-sm hover:border-b-2">FAQ</a>
+                </li>
+                <li class="text-white">
+                    <a href="" class="text-white font-semibold text-sm hover:border-b-2">Contact</a>
+                </li>
+                <li class="text-white">
+                    <a href="" class="text-white font-semibold text-sm hover:border-b-2">Login</a>
+                </li>
+                <li class="text-white">
+                    <a href="" class="text-white font-semibold text-sm hover:border-b-2">Register</a>
+                </li>
+            </ul>
+        </div>
+        <button id="modalToggle" class="p-4 text-white lg:hidden text-lg">
+            ☰ 
+        </button>
+    </header>
+
+    <!--=========== modal ===============-->
+    <!-- Modal Structure -->
+    <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+    <!-- External Close Button (top-right) -->
+    <button id="closeModal" class="fixed top-12 right-6 text-white text-3xl z-50 hover:text-gray-300">
+        &times;
+    </button>
+        <!-- Centered Long Modal -->
+        <div class="fixed inset-0 flex items-center justify-center p-4 z-40">
+            <div class="bg-white rounded-lg shadow-xl w-full max-w-md h-[70vh] animate-fade-in overflow-hidden flex flex-col">
+                <!-- Modal Content (left-aligned, scrollable) -->
+                <div class="flex-1 overflow-y-auto p-6">
+                    <nav class="space-y-5 text-left">
+                        <a href="#" class="block text-blue-700 font-semibold text-lg">Home</a>
+                        <a href="#" class="block text-gray-700 hover:text-blue-600 text-lg">About</a>
+                        <a href="#" class="block text-gray-700 hover:text-blue-600 text-lg">FAQ</a>
+                        <a href="#" class="block text-gray-700 hover:text-blue-600 text-lg">Login</a>
+                        <a href="#" class="block text-gray-700 hover:text-blue-600 text-lg">Register</a>
+                        <a href="#" class="block text-gray-700 hover:text-blue-600 text-lg">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- section 1 -->
+   <section class="bg-[#00008B] py-20">
+        <div class="grid md:grid-cols-2 gap-10 px-10">
+            <div class="text-center mt-10">
+                <div class="text-center mt-40">
+                    <h1 class="text-white text-5xl font-bold">
+                        We Keep You <br> Connected
+                    </h1>
+                    <p class="font-2 mt-8">
+                        Welcome to <span class="uppercase">ADEXHUB</span> Get affordable data plans, airtime,<br class="break"> electricity recharge, TV subscriptions, and what more? all with <br class="break"> cashback rewards.
+                        Start saving and earning today!
+                    </p>
+                </div>
+                <div class="mt-8">
+                    <a href="user_registration.html" class="font-3">
+                        Get Started <span class="bi bi-arrow-right h5"></span>
+                    </a>
+                </div>
+            </div>
+            <img src="img/hero-1-img.png" alt="adexhub" class="img">
+        </div>
+   </section>
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration
+        once: true      // Whether animation should happen only once
+      });
+    </script>
+</body>
+</html>
