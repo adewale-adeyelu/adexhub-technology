@@ -23,7 +23,7 @@
     </div>
 
    <!--============= Navbar ============-->
-   <header class="fixed w-full flex justify-between items-center bg-[#00008B] lg:py-7 py-3 shadow lg:px-28 px-4 z-40">
+   <header class="fixed w-full flex justify-between items-center bg-[#00008B] lg:py-7 py-3 shadow lg:px-28 px-4 z-30">
         <div>
             <a href="index.html"><img src="img/Adexhub_Logo_2.png" alt="adexxhub" width="140px"></a>
         </div>
@@ -84,14 +84,14 @@
    
     <!-- section 1 -->
    <section class="bg-[#00008B] py-10" id="top">
-        <div class="grid md:grid-cols-2 gap-5 lg:px-10 px-3">
+        <div class="grid lg:grid-cols-2 gap-5 xl:px-10 px-3">
             <div class="text-center mt-2 lg:mt-24">
                 <div class="text-center lg:mt-40 mt-28">
                     <h1 class="text-white text-5xl font-bold">
                         We Keep You <br> Connected
                     </h1>
                     <p class="font-2 mt-8">
-                        Welcome to <span class="uppercase">ADEXHUB</span> Get affordable data plans, airtime,<br class="hidden lg:block"> electricity recharge, TV subscriptions, and what more? all with <br class="hidden lg:block"> cashback rewards.
+                        Welcome to <span class="uppercase">ADEXHUB</span> Get affordable data plans, airtime,<br class="hidden xl:block"> electricity recharge, TV subscriptions, and what more? all with <br class="hidden xl:block"> cashback rewards.
                         Start saving and earning today!
                     </p>
                 </div>
@@ -101,14 +101,14 @@
                     </a>
                 </div>
             </div>
-            <div class="lg:mt-16">
+            <div class="lg:mt-16 flex justify-center">
                 <img src="img/hero-1-img.png" alt="adexhub" class="img animate">
             </div>
         </div>
    </section>
 
    <!-- section 2 -->
-    <section id="about" class="lg:mt-20 mt-20">
+    <section id="about" class="mt-20">
         <div class="text-center" data-aos="fade-up"  data-aos-duration="800">
             <h4 class="text-[#00008B] font-semibold text-3xl">
                 Our Serivces
@@ -117,7 +117,7 @@
                 At Adexhub, we simplify your everyday payments. From <br class="hidden lg:block">airtime and data to electricity and TV subscriptions, enjoy reliable and<br class="hidden lg:block"> secure transactions at your fingertips.
             </p>
         </div>
-        <div class="grid md:grid-cols-3 gap-8 lg:px-20 px-4 my-10" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+        <div class="grid lg:grid-cols-3 gap-8 xl:px-20 md:px-7 px-4 my-10" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
             <!-- 1st grid -->
             <div class="icon-box transform h-full px-6 py-10">
                 <span class="bi bi-phone text-3xl mt-3 icon-bg"></span>
@@ -153,8 +153,324 @@
         </div>
     </section>
    
-    
+    <!-- 3rd section -->
+    <section id="faq" class="lg:mt-20 mt-20 bg-[#f4f3fe] lg:px-10 px-3 py-10">
+        <div class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5">
+            <div>
+                <p class="text-[#00008B] text-4xl">
+                    Frequently Asked <span class="question-font font-bold">Questions</span>
+                </p>
+                <p class="text-[#6c757d] mt-3">
+                    Welcome to our FAQ section! Whether you're looking to purchase airtime, order data, get data pins, or pay for electricity and TV subscriptions, ADEXHUB has got you covered. Find answers to common questions about our platform and services. 💡📱📡
+                </p>
+                <div class="px-1 space-y-4 pt-10">
+                    <!-- Accordion Item 1-->
+                    <button onclick="toggleAccordion('acc1')" class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-[#00008B]">
+                        How do I purchase airtime or data using ADEXHUB?
+                        <span class="transition-transform bi bi-chevron-down" id="icon-acc1"></span>
+                    </button>
+                    <div id="panel-acc1" class="hidden px-2 pb-4 text-[#6c757d]">
+                        Purchasing airtime or data is simple! Log in to your Adexhub account, select the "Airtime " or "Data " option, enter the required details, and confirm your purchase. Your airtime or data will be delivered instantly to the specified phone number.
+                    </div>
+                
+                    <!-- Accordion Item  2-->
+                    <button onclick="toggleAccordion('acc2')" class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-[#00008B]">
+                        Can I pay for my electricity and TV subscriptions on ADEXHUB?
+                        <span class="transition-transform bi bi-chevron-down" id="icon-acc2"></span>
+                    </button>
+                    <div id="panel-acc2" class="hidden px-2 pb-4 text-[#6c757d]">
+                        Yes, you can! Simply select "Electricity " or "TV Subscription " from the menu, enter your meter number or smart card number, choose your preferred package, and complete the payment. Your service will be activated promptly.
+                    </div>
+                
+                    <!-- Accordion Item 3-->
+                    <button onclick="toggleAccordion('acc3')" class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-[#00008B]">
+                        What is a data pin, and how do I order one?
+                        <span class="transition-transform bi bi-chevron-down" id="icon-acc3"></span>
+                    </button>
+                    <div id="panel-acc3" class="hidden px-2 pb-4 text-[#6c757d]">
+                        A data pin is a code you can use to activate data on supported networks. To order a data pin, go to the "Data Pin " section on Adexhub, choose your preferred data bundle, and confirm your purchase. The pin will be delivered instantly to your registered
+                        email or phone number.
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/faq.webp" alt="faq" class="img">
+            </div>
+        </div>
+    </section>
 
+    <!-- 4th secion -->
+    <section class="py-16 lg:px-20 px-3">
+        <div class="text-center" data-aos="fade-up"  data-aos-duration="800">
+            <h4 class="text-[#00008B] font-semibold text-3xl">
+                Our Partners
+            </h4>
+            <div class="grid md:grid-cols-4 gap-5 mt-7">
+                <img src="img/partner-img-1.png" alt="adexhub" class="w-full">
+                <img src="img/partner-img-2.png" alt="adexhub" class="w-full">
+                <img src="img/partner-img-3.png" alt="adexhub" class="w-full">
+                <img src="img/partner-img-4.png" alt="adexhub" class="w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5th section -->
+    <section class="lg:px-20 px-3 py-10">
+        <div class="text-center" data-aos="fade-up"  data-aos-duration="800">
+            <h4 class="text-[#00008B] font-semibold text-3xl">
+                How To Register
+            </h4>
+            <p class="text-[#444444] mt-2 px-2">
+                Just 3 Easy Steps get you Registered
+            </p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-14 py-14">
+            <div class="icon-box transform radius-border px-6 py-3">
+                <div class="steps-item">
+                    <div class="steps-content">
+                        <div class="steps-number">
+                            01
+                        </div>
+                        <h3 class="text-[#00008B] font-semibold lg:text-2xl text-xl mt-2">
+                            Enter Email
+                        </h3>
+                        <p class="mt-2 text-[#444444]">
+                            Type your email in the input field to kick start the registration process
+                        </p>
+                        <div class="steps-features pt-3">
+                            <div class="feature-item mb-2">
+                                <i class="bi bi-check-circle icon"></i>
+                                <span class="text-[#444444]">We will send you and OTP</span>
+                            </div>
+                            <div class="feature-item pb-2">
+                                <i class="bi bi-check-circle icon"></i>
+                                <span class="text-[#444444]">Verify email address</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>    
+            <div class="icon-box transform radius-border px-6 py-3" style="padding-bottom: 20px;">
+                <div class="steps-item">
+                    <div class="steps-content">
+                        <div class="steps-number">
+                            02
+                        </div>
+                        <h3 class="text-[#00008B] font-semibold lg:text-2xl text-xl mt-2">
+                            Fill Registration Form
+                        </h3>
+                        <p class="mt-2 text-[#444444]">
+                            You will be required to fill you personal details
+                        </p>
+                        <div class="steps-features pt-3">
+                            <div class="feature-item mb-2">
+                                <i class="bi bi-check-circle icon"></i>
+                                <span class="text-[#444444]">
+                                    Type personal details
+                                </span>
+                            </div>
+                            <div class="feature-item pb-2">
+                                <i class="bi bi-check-circle icon"></i>
+                                <span class="text-[#444444]">
+                                    Choose strong password
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-box transform radius-border px-6 py-5">
+                <div class="steps-item">
+                    <div class="steps-content">
+                        <div class="steps-number">
+                            03
+                        </div>
+                        <h3 class="text-[#00008B] font-semibold lg:text-2xl text-xl mt-2">
+                            All Done
+                        </h3>
+                        <p class="mt-2 text-[#444444]">
+                            Your registration has been completed. Congratulations & thanks for joining ADEXHUB!
+                        </p>
+                        <div class="steps-features pt-3">
+                            <div class="feature-item mb-2">
+                                <i class="bi bi-check-circle icon"></i>
+                                <span class="text-[#444444]">Fund Wallet</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="bi bi-check-circle icon"></i>
+                                <span class="text-[#444444]">You can now transact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>     
+        </div>
+    </section>
+
+    <!-- 6th section -->
+    <section class="lg:py-16 py-8 lg:px-20 px-3 bg-[#f4f3fe]">
+        <div class="text-center">
+            <h4 class="text-[#00008B] font-bold text-3xl">
+                Build your dream retailer website today
+            </h4>
+            <p class="text-[#00008B] font-base pt-4 text-lg">
+                Discover how our Expert team can help you build your dream website. Our technical <br class="hidden lg:block">
+                team is always available to help.
+            </p>
+        </div>
+    </section>
+
+    <!-- 7th section -->
+    <section class="my-14 lg:px-28 px-3 py-5" id="contact">
+        <h4 class="text-[#00008B] font-semibold text-4xl">
+            Contact Us
+        </h4>
+        <div class="grid lg:grid-cols-2 gap-5 mt-5">
+            <div>
+                <div class="flex my-5">
+                    <span class="bi bi-geo-alt h4 me-3 bg-icon"></span>
+                    <div>
+                        <h3 class="font-bold" style="color: #00008B; font-size: 18px;">Address</h3>
+                        <p class="text-[#444444]">Lagos State</p>
+                    </div>
+                </div>
+                <div class="flex my-5">
+                    <span class="bi bi-telephone h4 me-3 bg-icon"></span>
+                    <div>
+                        <h3 class="font-bold" style="color: #00008B; font-size: 18px;">Call Us</h3>
+                        <p class="text-[#444444]">+2347070051427 / +2347015919477</p>
+                    </div>
+                </div>
+                <div class="flex mt-4">
+                    <span class="bi bi-envelope h4 me-3 bg-icon"></span>
+                    <div>
+                        <h3 class="font-bold" style="color: #00008B; font-size: 18px;">Email Us</h3>
+                        <p class="text-[#444444]">adewaleadeyelu17@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form action="" class="pt-10 lg:pt-0">
+                    <div class="grid md:grid-cols-2 gap-1">
+                        <input type="text" class="w-full px-4 py-2 border border-[#6c757d] mb-8" name="name" placeholder="Yout Name" required>
+                        <input type="email" class="w-full px-4 py-2 border border-[#6c757d] mb-8" name="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" class="w-full px-4 py-2 border border-[#6c757d] mb-8" name="text" placeholder="Subject" required>
+                    <textarea class="form-control w-full border border-[#6c757d] p-3" name="message" rows="6" placeholder="Message" style="height: 159px" required></textarea>
+                    <div class="my-4 text-center">
+                            <button class="font-10" type="submit">Send Messages</button>
+                        </div>
+                    </form>
+                <!-- <div class="col-md-12 text-center ">
+                        <div class="loading ">Loading</div>
+                        <div class="error-message "></div>
+                        <div class="sent-message ">Your message has been sent. Thank you!</div>
+                        <button type="submit ">Send Message</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="bg-[#00008B] py-16 lg:px-20 px-5">
+            <div class="pt-3">
+                <div class="grid md:grid-cols-4 gap-5">
+                    <div class="">
+                        <img src="img/Adexhub_Logo_2.png" alt="AdexHub" width="150px">
+                        <p class="text-white py-3">
+                            ADEXHUB is always to provide realiable, cheap and fast-delivery digital services.
+                        </p>
+                        <p class="flex">
+                            <a href="">
+                                <span class="bi bi-instagram h3 me-3 text-white border-circle"></span>
+                            </a>
+                            <a href="">
+                                <span class="bi bi-whatsapp h3 me-3 text-white border-circle"></span>
+                            </a>
+                            <a href="">
+                                <span class="bi bi-facebook h3 text-white border-circle"></span>
+                            </a>
+                            <a href="">
+                                <span class="bi bi-linkedin h3 text-white border-circle ps-3"></span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="">
+                        <h4 class="text-white border-line text-2xl ">
+                            Customer
+                        </h4>
+                        <div class="space-y-4 py-3">
+                            <p>
+                                <a class="text-white text-decoration-none hover:border-b-2" href="user_registration.html">Dashboard</a>
+                            </p>
+                            <p>
+                                <a class="text-white text-decoration-none hover:border-b-2" href="#contact">Chat Us</a>
+                            </p>
+                            <p>
+                                <a class="text-white text-decoration-none hover:border-b-2" href="#">Refer</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h4 class="text-white border-line text-2xl">
+                            Product
+                        </h4>
+                        <div class="space-y-3 py-3">
+                            <p>
+                                <a class="text-white text-decoration-none hover:border-b-2" href="user_registration.html">Buy Airtime</a>
+                            </p>
+                            <p>
+                                <a class="text-white text-decoration-none hover:border-b-2" href="user_registration.html">Buy Data</a>
+                            </p>
+                            <p>
+                                <a class="text-white text-decoration-none hover:border-b-2" href="user_registration.html">Pay Bills</a>
+                            </p>
+                            <p>
+                                <a class="text-white text-decoration-none hover:border-b-2" href="user_registration.html">Buy Exam Pins</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h4 class="text-white border-line text-2xl">
+                            Support
+                        </h4>
+                        <div class="space-y-3 py-3">
+                            <p>
+                                <a class="text-white text-decoration-none hover:border-b-2" href="#faq">FAQ</a>
+                            </p>
+                            <p>
+                                <a class="text-white text-decoration-none hover:border-b-2" href="#contact">Contact</a>
+                            </p>
+                            <p>
+                                <a class="text-white text-decoration-none hover:border-b-2" href="https://wa.me/qr/JI2QLLE3MTVRA1">Whatsapp</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mx-4 mt-6">
+            <p class="text-white flex justify-center items-center mt-7">
+                &copy; 2025 Adexhub All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <!-- scroll-top -->
+    <div class="scrollTop flex justify-center items-center">
+        <a href="#top">
+            <i class="bi bi-arrow-up-short text-white h5"></i>
+        </a>
+    </div>
 
 
 

@@ -58,3 +58,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// accordion
+function toggleAccordion(id) {
+    const panel = document.getElementById(`panel-${id}`);
+    const icon = document.getElementById(`icon-${id}`);
+
+    const isOpen = !panel.classList.contains("hidden");
+    if (isOpen) {
+        panel.classList.add("hidden");
+        icon.classList.replace("bi-chevron-up", "bi-chevron-down");
+    } else {
+        panel.classList.remove("hidden");
+        icon.classList.replace("bi-chevron-down", "bi-chevron-up");
+    }
+}
