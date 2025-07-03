@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>User Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
-    
+
+<body style=" background-color: whitesmoke;">
+    <div class="">
+        <div class="flex justify-center">
+            <div class="icon-box bg-white lg-space">
+                <div class="text-center">
+                    <img src="img/Adexhub logo 3.png" alt="adex" width="200px">
+                    <p class="font-1 mt-2">
+                        Sign In to Continue
+                    </p>
+                </div>
+                <form action="" id="loginForm">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Email Address</label>
+                        <input name="email" required placeholder="Enter username" id="username" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassVal" class="form-label">Password</label>
+                        <div class="input-group">
+                            <input required placeholder="Enter password" id="password" type="password" class="form-control">
+                            <button type="button" id="togglebtn" class="btn btn-outline-secondary" title="Toggle Password Visibility"><i class="bi bi-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="remember-Check">
+                        <label class="form-check-label" for="remember-Check">
+                            Remember me
+                        </label>
+                    </div>
+                    <div class="d-grid mt-3">
+                        <input type="submit" id="loginLoader" class="btn btn-none text-white submitBtn" name="submitlogin" value="Login" style=" background-color: #00008b; border-radius: 10px; padding: 10px 30px;">
+                    </div>
+                    <div class="mt-4 mb-0 text-center">
+                        <a class="text-dark" href="forgot_password.html"><i class="bi bi-lock"></i> Forgot
+                            your password?
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <p class="text-center mt-3">
+            Don't have an account?
+            <a href="user_registration.html">Sign Up</a>
+        </p>
+    </div>
+
+
+
+    <script src=" script.js "></script>
 </body>
+
 </html>

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.font-1 {
+    color: #6c757d;
+}
+
+.lg-space {
+    padding: 50px;
+}
+
+.icon-box{
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 768px) {}
