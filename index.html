@@ -30,16 +30,16 @@
         <div>
             <ul class="flex items-start space-x-7 hidden lg:flex">
                 <li class="text-white">
-                    <a href="" class="text-white font-semibold text-sm hover:border-b-2">Home</a>
+                    <a href="#top" class="text-white font-semibold text-sm hover:border-b-2">Home</a>
                 </li>
                 <li class="text-white">
-                    <a href="" class="text-white font-semibold text-sm hover:border-b-2">About</a>
+                    <a href="#about" class="text-white font-semibold text-sm hover:border-b-2">About</a>
                 </li>
                 <li class="text-white">
-                    <a href="" class="text-white font-semibold text-sm hover:border-b-2">FAQ</a>
+                    <a href="#faq" class="text-white font-semibold text-sm hover:border-b-2">FAQ</a>
                 </li>
                 <li class="text-white">
-                    <a href="" class="text-white font-semibold text-sm hover:border-b-2">Contact</a>
+                    <a href="#contact" class="text-white font-semibold text-sm hover:border-b-2">Contact</a>
                 </li>
                 <li class="text-white">
                     <a href="" class="text-white font-semibold text-sm hover:border-b-2">Login</a>
@@ -56,23 +56,25 @@
 
     <!--=========== modal ===============-->
     <!-- Modal Structure -->
-    <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
-    <!-- External Close Button (top-right) -->
-    <button id="closeModal" class="fixed top-12 right-6 text-white text-3xl z-50 hover:text-gray-300">
-        &times;
-    </button>
+    <!-- Modal Structure -->
+    <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
+        <!-- External Close Button -->
+        <button id="closeModal" class="fixed top-12 right-6 text-white text-3xl z-50 hover:text-gray-300">
+            &times;
+        </button>
+        
         <!-- Centered Long Modal -->
         <div class="fixed inset-0 flex items-center justify-center p-4 z-40">
-            <div class="bg-white rounded-lg shadow-xl w-full max-w-md h-[70vh] animate-fade-in overflow-hidden flex flex-col">
-                <!-- Modal Content (left-aligned, scrollable) -->
+            <div class="bg-white rounded-lg shadow-xl w-full max-w-md h-[70vh] animate-fade-in overflow-hidden flex flex-col">  
+                <!-- Modal Content -->
                 <div class="flex-1 overflow-y-auto p-6">
-                    <nav class="space-y-5 text-left">
-                        <a href="#" class="block text-blue-700 font-semibold text-lg">Home</a>
-                        <a href="#" class="block text-gray-700 hover:text-blue-600 text-lg">About</a>
-                        <a href="#" class="block text-gray-700 hover:text-blue-600 text-lg">FAQ</a>
-                        <a href="#" class="block text-gray-700 hover:text-blue-600 text-lg">Login</a>
-                        <a href="#" class="block text-gray-700 hover:text-blue-600 text-lg">Register</a>
-                        <a href="#" class="block text-gray-700 hover:text-blue-600 text-lg">Contact</a>
+                    <nav class="space-y-4 text-left">
+                        <a href="#top" class="block text-blue-600 text-lg modal-link">Home</a>
+                        <a href="#about" class="block text-gray-700 hover:text-blue-600 text-lg modal-link">About</a>
+                        <a href="#faq" class="block text-gray-700 hover:text-blue-600 text-lg modal-link">FAQ</a>
+                        <a href="#login" class="block text-gray-700 hover:text-blue-600 text-lg modal-link">Login</a>
+                        <a href="#register" class="block text-gray-700 hover:text-blue-600 text-lg modal-link">Register</a>
+                        <a href="#contact" class="block text-gray-700 hover:text-blue-600 text-lg modal-link">Contact</a>
                     </nav>
                 </div>
             </div>
@@ -81,7 +83,7 @@
 
    
     <!-- section 1 -->
-   <section class="bg-[#00008B] py-10">
+   <section class="bg-[#00008B] py-10" id="top">
         <div class="grid md:grid-cols-2 gap-5 lg:px-10 px-3">
             <div class="text-center mt-2 lg:mt-24">
                 <div class="text-center lg:mt-40 mt-28">
@@ -106,8 +108,8 @@
    </section>
 
    <!-- section 2 -->
-    <section id="about" class="lg:mt-20 mt-16">
-        <div class="text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+    <section id="about" class="lg:mt-20 mt-20">
+        <div class="text-center" data-aos="fade-up"  data-aos-duration="800">
             <h4 class="text-[#00008B] font-semibold text-3xl">
                 Our Serivces
             </h4>
@@ -115,11 +117,11 @@
                 At Adexhub, we simplify your everyday payments. From <br class="hidden lg:block">airtime and data to electricity and TV subscriptions, enjoy reliable and<br class="hidden lg:block"> secure transactions at your fingertips.
             </p>
         </div>
-        <div class="grid md:grid-cols-3 gap-5 lg:px-20 px-4 my-10" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+        <div class="grid md:grid-cols-3 gap-8 lg:px-20 px-4 my-10" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
             <!-- 1st grid -->
             <div class="icon-box transform h-full px-6 py-10">
                 <span class="bi bi-phone text-3xl mt-3 icon-bg"></span>
-                <h4 class="text-[#00008B] font-semibold text-3xl mt-2">
+                <h4 class="text-[#00008B] font-semibold lg:text-3xl text-2xl mt-2">
                     Buy Data/Airtime
                 </h4>
                 <p class="mt-2 text-[#444444]">
@@ -130,7 +132,7 @@
             <!-- 2nd grid -->
             <div class="icon-box transform h-full px-6 py-10">
                 <span class="bi bi-shield-check text-3xl mt-3 icon-bg"></span>
-                <h4 class="text-[#00008B] font-semibold text-3xl mt-2">
+                <h4 class="text-[#00008B] font-semibold lg:text-3xl text-2xl mt-2">
                     Generate Data Pins
                 </h4>
                 <p class="mt-2 text-[#444444]">
@@ -141,7 +143,7 @@
             <!-- 3rd grid -->
             <div class="icon-box transform h-full px-6 py-10">
                 <span class="bi bi-lightning text-3xl mt-3 icon-bg"></span>
-                <h4 class="text-[#00008B] font-semibold text-3xl mt-2">
+                <h4 class="text-[#00008B] font-semibold lg:text-3xl text-2xl mt-2">
                     Bills Payments
                 </h4>
                 <p class="mt-2 text-[#444444]">

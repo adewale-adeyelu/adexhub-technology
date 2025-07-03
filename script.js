@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalOverlay = document.getElementById('modalOverlay');
     const modalToggle = document.getElementById('modalToggle');
     const closeModal = document.getElementById('closeModal');
+    const modalLinks = document.querySelectorAll('.modal-link');
     
     // Open modal
     modalToggle.addEventListener('click', function() {
@@ -25,18 +26,35 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = 'hidden';
     });
     
-    // Close modal
-    closeModal.addEventListener('click', function() {
+    // Close modal function
+    const closeModalFunc = function() {
         modalOverlay.classList.add('hidden');
         document.body.style.overflow = '';
-    });
+    };
     
-    // Close modal when clicking outside
+    // Close modal when clicking X
+    closeModal.addEventListener('click', closeModalFunc);
+    
+    // Close when clicking outside
     modalOverlay.addEventListener('click', function(e) {
         if (e.target === modalOverlay) {
-            modalOverlay.classList.add('hidden');
-            document.body.style.overflow = '';
+            closeModalFunc();
         }
+    });
+    
+    // Close with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeModalFunc();
+        }
+    });
+    
+    // Handle navigation link clicks
+    modalLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Close the modal first
+            closeModalFunc();
+        });
     });
 });
 
