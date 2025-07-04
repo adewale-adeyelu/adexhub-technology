@@ -23,7 +23,7 @@
     </div>
 
    <!--============= Navbar ============-->
-   <header class="fixed w-full flex justify-between items-center bg-[#00008B] lg:py-7 py-3 shadow lg:px-28 px-4 z-30">
+   <header class="fixed w-full flex justify-between items-center bg-[#00008B] lg:py-7 py-3 lg:px-28 px-4 z-30">
         <div>
             <a href="index.html"><img src="img/Adexhub_Logo_2.png" alt="adexxhub" width="140px"></a>
         </div>
@@ -109,7 +109,7 @@
 
    <!-- section 2 -->
     <section id="about" class="mt-20">
-        <div class="text-center" data-aos="fade-up"  data-aos-duration="800">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
             <h4 class="text-[#00008B] font-semibold text-3xl">
                 Our Serivces
             </h4>
@@ -165,31 +165,37 @@
                 </p>
                 <div class="px-1 space-y-4 pt-10">
                     <!-- Accordion Item 1-->
-                    <button onclick="toggleAccordion('acc1')" class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-[#00008B]">
-                        How do I purchase airtime or data using ADEXHUB?
-                        <span class="transition-transform bi bi-chevron-down" id="icon-acc1"></span>
-                    </button>
-                    <div id="panel-acc1" class="hidden px-2 pb-4 text-[#6c757d]">
-                        Purchasing airtime or data is simple! Log in to your Adexhub account, select the "Airtime " or "Data " option, enter the required details, and confirm your purchase. Your airtime or data will be delivered instantly to the specified phone number.
+                     <div class="border-b-2">
+                        <button onclick="toggleAccordion('acc1')" class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-[#00008B]">
+                            How do I purchase airtime or data using ADEXHUB?
+                            <span class="transition-transform bi bi-chevron-down" id="icon-acc1"></span>
+                        </button>
+                        <div id="panel-acc1" class="hidden px-2 pb-4 text-[#6c757d]">
+                            Purchasing airtime or data is simple! Log in to your Adexhub account, select the "Airtime " or "Data " option, enter the required details, and confirm your purchase. Your airtime or data will be delivered instantly to the specified phone number.
+                        </div>
                     </div>
-                
-                    <!-- Accordion Item  2-->
-                    <button onclick="toggleAccordion('acc2')" class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-[#00008B]">
-                        Can I pay for my electricity and TV subscriptions on ADEXHUB?
-                        <span class="transition-transform bi bi-chevron-down" id="icon-acc2"></span>
-                    </button>
-                    <div id="panel-acc2" class="hidden px-2 pb-4 text-[#6c757d]">
-                        Yes, you can! Simply select "Electricity " or "TV Subscription " from the menu, enter your meter number or smart card number, choose your preferred package, and complete the payment. Your service will be activated promptly.
+
+                    <div class="border-b-2">
+                        <!-- Accordion Item  2-->
+                        <button onclick="toggleAccordion('acc2')" class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-[#00008B]">
+                            Can I pay for my electricity and TV subscriptions on ADEXHUB?
+                            <span class="transition-transform bi bi-chevron-down" id="icon-acc2"></span>
+                        </button>
+                        <div id="panel-acc2" class="hidden px-2 pb-4 text-[#6c757d]">
+                            Yes, you can! Simply select "Electricity " or "TV Subscription " from the menu, enter your meter number or smart card number, choose your preferred package, and complete the payment. Your service will be activated promptly.
+                        </div>
                     </div>
-                
-                    <!-- Accordion Item 3-->
-                    <button onclick="toggleAccordion('acc3')" class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-[#00008B]">
-                        What is a data pin, and how do I order one?
-                        <span class="transition-transform bi bi-chevron-down" id="icon-acc3"></span>
-                    </button>
-                    <div id="panel-acc3" class="hidden px-2 pb-4 text-[#6c757d]">
-                        A data pin is a code you can use to activate data on supported networks. To order a data pin, go to the "Data Pin " section on Adexhub, choose your preferred data bundle, and confirm your purchase. The pin will be delivered instantly to your registered
-                        email or phone number.
+                   
+                    <div class="border-b-2">
+                          <!-- Accordion Item 3-->
+                        <button onclick="toggleAccordion('acc3')" class="w-full flex justify-between items-center p-4 text-left text-lg font-medium text-[#00008B]">
+                            What is a data pin, and how do I order one?
+                            <span class="transition-transform bi bi-chevron-down" id="icon-acc3"></span>
+                        </button>
+                        <div id="panel-acc3" class="hidden px-2 pb-4 text-[#6c757d]">
+                            A data pin is a code you can use to activate data on supported networks. To order a data pin, go to the "Data Pin " section on Adexhub, choose your preferred data bundle, and confirm your purchase. The pin will be delivered instantly to your registered
+                            email or phone number.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,7 +222,7 @@
 
     <!-- 5th section -->
     <section class="lg:px-20 px-3 py-10">
-        <div class="text-center" data-aos="fade-up"  data-aos-duration="800">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
             <h4 class="text-[#00008B] font-semibold text-3xl">
                 How To Register
             </h4>
@@ -373,11 +379,11 @@
     </section>
 
     <!-- footer -->
-    <footer data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+    <footer>
         <div class="bg-[#00008B] py-16 lg:px-20 px-5">
             <div class="pt-3">
                 <div class="grid md:grid-cols-4 gap-5">
-                    <div class="">
+                    <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                         <img src="img/Adexhub_Logo_2.png" alt="AdexHub" width="150px">
                         <p class="text-white py-3">
                             ADEXHUB is always to provide realiable, cheap and fast-delivery digital services.
@@ -397,7 +403,7 @@
                             </a>
                         </p>
                     </div>
-                    <div class="">
+                    <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                         <h4 class="text-white border-line text-2xl ">
                             Customer
                         </h4>
@@ -413,7 +419,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="">
+                    <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                         <h4 class="text-white border-line text-2xl">
                             Product
                         </h4>
@@ -432,7 +438,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="">
+                    <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                         <h4 class="text-white border-line text-2xl">
                             Support
                         </h4>

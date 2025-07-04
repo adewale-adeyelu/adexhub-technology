@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>User Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
-    
+<body class="bg-gray-100 min-h-screen flex items-center justify-center px-3 md:px-0">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <div class="text-center flex justify-center items-center my-3">
+            <img src="img/Adexhub_logo_3.png" alt="adexhub" width="200px">
+        </div>
+        <div>
+            <p class="text-[#1a5d91] bg-[#d4f1f9] mb-5 py-3 px-5"><i class="bi bi-exclamation-circle"></i> We will send a verification code to your email address!</p>
+        </div>
+      
+        <form action="">
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-medium mb-2" for="email">
+                    Email Address
+                </label>
+                <input id="email" type="email" placeholder="Enter Email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <button type="submit" class="w-full bg-[#00008B] text-white py-3 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                Continue
+            </button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
