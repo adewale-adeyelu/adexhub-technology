@@ -157,10 +157,10 @@ html{
     color: #00008b;
 }
 
-.transform:hover {
-    transform: translateY(-10px);
-    transition: all 0.5s;
-    cursor: pointer;
+.box-transform:hover {
+    transform: translateY(-10px) !important;
+    transition: all 0.5s !important;
+    cursor: pointer !important;
 }
 
 .icon-box{
