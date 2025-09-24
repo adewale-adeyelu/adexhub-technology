@@ -108,7 +108,7 @@ html{
 
 .font-2 {
     color: #ffffffb3;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .uppercase {
@@ -120,12 +120,17 @@ html{
 }
 
 .font-3 {
-    font-size: 22px;
-    background-color: #fff;
-    color: #00008B;
+    font-size: 20px;
+    border: 1px solid #fff;
+    color: #ffffffb3;
     border-radius: 30px;
     padding: 10px 30px;
     text-decoration: none;
+}
+
+.font-3:hover{
+    background-color: #fff;
+    color: #00008B;
 }
 
 .animate {
@@ -206,6 +211,10 @@ html{
     border: 1px solid #00008B;
 }
 
+.service-text{
+    font-size: 15px;
+}
+
 .bg-icon {
     width: 44px;
     height: 44px;
@@ -220,7 +229,7 @@ html{
 
 .border-line {
     border-bottom: 5px solid #fff;
-    width: 100px;
+    width: 80px;
     border-radius: 5px;
 }
 
@@ -236,5 +245,8 @@ html{
     .font-2 {
         text-align: center;
         font-size: 18px;
+    }
+    .service-text{
+        font-size: 14px;
     }
 }
